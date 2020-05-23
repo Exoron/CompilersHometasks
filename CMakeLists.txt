@@ -5,4 +5,5 @@ find_package(FLEX REQUIRED)
 find_package(BISON REQUIRED)
 
 add_subdirectory(01-naive-interpreter)
+add_subdirectory(02-ast-tree)
 
