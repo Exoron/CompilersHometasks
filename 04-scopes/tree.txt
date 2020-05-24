@@ -1,0 +1,27 @@
+Program
+	Statements
+		Decl
+		Assign
+			Number
+		Decl
+			Number
+		Scope Statements
+			Statements
+				Print
+					Number
+				Print
+					Variable
+				Print
+					Variable
+				Print
+					Add
+						Variable
+						Variable
+				Print
+					Div
+						Variable
+						Variable
+		Scope Statements
+			Statements
+		Scope Statements
+			Statements
