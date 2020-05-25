@@ -11,6 +11,12 @@ ScopeLayer::ScopeLayer(ScopeLayer* parent) : parent_(parent) {
 
 ScopeLayer::ScopeLayer() : parent_(nullptr) {}
 
+ScopeLayer::~ScopeLayer() {
+  for(auto child: children_) {
+    delete child;
+  }
+}
+
 void ScopeLayer::DeclareVariable(Symbol symbol) {
   if (values_.find(symbol) != values_.end()) {
     throw std::runtime_error("Variable `" + symbol.GetName() +

@@ -6,6 +6,10 @@
 SymbolTreeVisitor::SymbolTreeVisitor()
     : tree_{new ScopeLayer}, current_layer_{tree_.root_} {}
 
+SymbolTreeVisitor::~SymbolTreeVisitor() {
+  delete current_layer_;
+}
+
 ScopeLayer* SymbolTreeVisitor::GetRoot() {
   return current_layer_;
 }

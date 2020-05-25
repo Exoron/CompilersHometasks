@@ -9,7 +9,7 @@ class ScopeLayerTree;
 class SymbolTreeVisitor: public Visitor {
  public:
   explicit SymbolTreeVisitor();
-  ~SymbolTreeVisitor() override = default;
+  ~SymbolTreeVisitor() override;
 
   void Visit(NumberExpression*) override;
   void Visit(VariableExpression*) override;

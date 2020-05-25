@@ -11,6 +11,7 @@ class ScopeLayer {
  public:
   explicit ScopeLayer(ScopeLayer* parent);
   ScopeLayer();
+  ~ScopeLayer();
   void DeclareVariable(Symbol symbol);
   void Put(Symbol symbol, std::shared_ptr<Object> value);
   std::shared_ptr<Object> Get(Symbol symbol);
